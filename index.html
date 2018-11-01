@@ -13,17 +13,17 @@
 <body>
   <header>
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a href="/" tabindex="-1" aria-current="page">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application" aria-label="Map displaying location of searched restaurants"></div>
     </section>
-    <section>
-      <div class="filter-options">
-        <h2>Filter Results</h2>
+    <section aria-label="Area having filters and restaurants list">
+      <div class="filter-options" aria-labelledby="filter-result">
+        <h2 id="filter-result">Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
@@ -41,7 +41,7 @@
 
 
   <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017 <a href="/" tabindex="-1" aria-current="page"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
 </body>
